@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StringLibrary\StringLibrary.csproj" />
+    <PackageReference Include="YueWang.StringLibrary" Version="1.0.5" />
   </ItemGroup>
 
 </Project>
