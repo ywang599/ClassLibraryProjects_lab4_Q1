@@ -18,7 +18,7 @@ steps:
 - script: dotnet build $(projectPath) --configuration $(buildConfiguration)
   displayName: 'Build'
 
-- script: dotnet pack $(projectPath) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+- script: dotnet pack $(projectPath) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) /p:PackageId=YueWang.StringLibrary /p:PackageVersion=1.0.$(Build.BuildId)
   displayName: 'Pack NuGet package'
 
 - task: NuGetCommand@2
